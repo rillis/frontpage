@@ -36,15 +36,6 @@ body{
   height: 7vh;
 }
 
-.logo span{
-  font-size: 21px;
-  font-family: Century Gothic;
-}
-
-.logo a{
-  text-decoration: none;
-}
-
 .logo{
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
@@ -120,3 +111,27 @@ hr{
 .ribbon-badge { cursor: pointer; }
 .enabled {background-color:#f8f9fa;color:#212529;}
 .disabled {background-color:#cccccc;color:#212529;}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('fonts/CaviarDreams.ttf') format('truetype');
+}
+
+.btn-ribbons{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #282828;
+  color: #e7e7e7;
+  font-size: 25px;
+  font-family: CaviarDreams;
+}
+
+.btn-ribbons a{
+  text-decoration: none;
+  color: #e7e7e7;
+}
+
+.btn-ribbons a:hover{
+  color: #ffffff;
+}

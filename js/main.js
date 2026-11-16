@@ -4,6 +4,12 @@
   // Ano no rodapé
   document.getElementById("ano-atual").textContent = new Date().getFullYear();
 
+  // Idade calculada a partir da data de nascimento (10/09/1999)
+  var hoje = new Date();
+  var idade = hoje.getFullYear() - 1999;
+  if (hoje.getMonth() < 8 || (hoje.getMonth() === 8 && hoje.getDate() < 10)) idade--;
+  document.getElementById("idade").textContent = idade;
+
   // Tema claro/escuro (lembrado no navegador)
   function currentTheme() {
     if (root.dataset.theme) return root.dataset.theme;

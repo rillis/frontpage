@@ -50,7 +50,7 @@
       var latest = repos.filter(function (r) { return r.name !== "rillis"; })[0];
       if (!latest) return;
       var el = document.getElementById("status");
-      el.textContent = "último push: " + latest.name + " · " + ago(new Date(latest.pushed_at));
+      el.innerHTML = "último push: <a href=\"https://github.com/rillis/" + latest.name + "\" target=\"_blank\" rel=\"noopener\"><u>" + latest.name + "</u></a> · " + ago(new Date(latest.pushed_at));
       el.title = new Date(latest.pushed_at).toLocaleString("pt-BR");
     })
     .catch(function () { /* mantém o texto padrão */ });

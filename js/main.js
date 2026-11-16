@@ -15,7 +15,7 @@
     try { localStorage.setItem("theme", next); } catch (e) {}
   });
 
-  // Atalhos de teclado: P, G, L, B
+  // Atalhos de teclado: P, G, L
   document.addEventListener("keydown", function (e) {
     if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
     var tag = (e.target.tagName || "").toLowerCase();
